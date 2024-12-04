@@ -1,0 +1,25 @@
+ Mainly: libraries help you accomplish a couple tasks; frameworks define your whole project, from how it does what it does to probably even your file structure and naming conventions.
+React really only helps you render HTML from JS, and keep it in-sync with application state. That's it. Its API surface area is really small. That's why it's often considered a library, and not a framework.
+
+But if you pile enough React packages on top of it, it can start to feel pretty frameworky. Does that make sense? 
+
+
+we need to learn about JSX 
+
+no 
+bootstrap class become className as
+JSx markup allowed html element or  other react components 
+JSX not alloed  javascript inside it . so we write js in {}  -> check ListGroupIterate
+
+***********************************
+        <button onClick={setAlert(inputKey)}></button>
+here we are calling the function. The function returns void. void is not assignable to onClick which expects a function.
+
+Fix: create a new function that calls fetchData e.g. onClick={() => this.fetchData("dfd")} .
+
+Learn about : 
+// React.ChangeEvent<HTMLInputElement>: For input elements.
+// React.ChangeEvent<HTMLTextAreaElement>: For textarea elements.
+// React.ChangeEvent<HTMLSelectElement>: For select elements.
+// React.ChangeEvent<HTMLInputElement>: This type describes the event for an input element's onChange handler in React.
+If you were handling other elements (e.g., textarea, select), the type would be React.ChangeEvent<HTMLTextAreaElement> or React.ChangeEvent<HTMLSelectElement>.
